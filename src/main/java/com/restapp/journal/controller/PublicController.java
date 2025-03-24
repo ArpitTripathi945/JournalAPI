@@ -2,7 +2,6 @@ package com.restapp.journal.controller;
 
 
 import com.restapp.journal.entity.User;
-import com.restapp.journal.repository.UserRepository;
 import com.restapp.journal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +25,7 @@ public class PublicController {
 
     @PostMapping("/create-user")
     public void createUser(@RequestBody User user){
-        userService.saveEntry(user);
+        userService.saveNewUser(user);
     }
 
     @GetMapping("/health-check")
