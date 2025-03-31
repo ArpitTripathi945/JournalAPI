@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Journal App
+
+  data:
+    mongodb:
+      uri: mongodb+srv://triarpit397:rNFq2oXBHacXzMOG@cluster0.os4yy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
+      auto-index-creation: true
+
